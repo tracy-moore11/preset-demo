@@ -1,0 +1,175 @@
+dashboard_title: Business Pulse Dashboard
+description: null
+css: ".chart-id-80 {\n  color:#FF0000; !important\n}\n.css-8gjvpu {\n  max-width:\
+  \ 100px;\n}"
+slug: null
+certified_by: Jim
+certification_details: testing
+published: true
+uuid: 99c2d2dd-74ea-478d-8552-8bb3902967b0
+position:
+  CHART-explore-83-1:
+    children: []
+    id: CHART-explore-83-1
+    meta:
+      chartId: 83
+      height: 50
+      sliceName: test
+      uuid: a94afb49-0b46-41d6-9bdf-ccc327b17fa6
+      width: 4
+    parents:
+    - ROOT_ID
+    - GRID_ID
+    - ROW-imTjlTNCPZ
+    type: CHART
+  CHART-lfVULVNhpf:
+    children: []
+    id: CHART-lfVULVNhpf
+    meta:
+      chartId: 81
+      height: 50
+      sliceName: Sales by Month
+      uuid: 2f637270-8927-4f41-a1a6-39371c68672e
+      width: 7
+    parents:
+    - ROOT_ID
+    - GRID_ID
+    - ROW-qAfDPxOWzP
+    type: CHART
+  CHART-vWVbIBcEwL:
+    children: []
+    id: CHART-vWVbIBcEwL
+    meta:
+      chartId: 80
+      height: 50
+      sliceName: Total Sales YTD
+      uuid: 5f066557-3dcc-453e-9f98-5db6ef529060
+      width: 4
+    parents:
+    - ROOT_ID
+    - GRID_ID
+    - ROW-qAfDPxOWzP
+    type: CHART
+  DASHBOARD_VERSION_KEY: v2
+  GRID_ID:
+    children:
+    - ROW-qAfDPxOWzP
+    - ROW-imTjlTNCPZ
+    id: GRID_ID
+    parents:
+    - ROOT_ID
+    type: GRID
+  HEADER_ID:
+    id: HEADER_ID
+    meta:
+      text: Business Pulse Dashboard
+    type: HEADER
+  ROOT_ID:
+    children:
+    - GRID_ID
+    id: ROOT_ID
+    type: ROOT
+  ROW-imTjlTNCPZ:
+    children:
+    - CHART-explore-83-1
+    id: ROW-imTjlTNCPZ
+    meta:
+      '0': ROOT_ID
+      background: BACKGROUND_TRANSPARENT
+    parents:
+    - ROOT_ID
+    - GRID_ID
+    type: ROW
+  ROW-qAfDPxOWzP:
+    children:
+    - CHART-vWVbIBcEwL
+    - CHART-lfVULVNhpf
+    id: ROW-qAfDPxOWzP
+    meta:
+      background: BACKGROUND_TRANSPARENT
+    parents:
+    - ROOT_ID
+    - GRID_ID
+    type: ROW
+metadata:
+  chart_configuration:
+    '81':
+      id: 81
+      crossFilters:
+        scope: global
+        chartsInScope:
+        - 80
+        - 83
+  color_scheme: googleCategory10c
+  color_scheme_domain:
+  - '#3366cc'
+  - '#dc3912'
+  - '#ff9900'
+  - '#109618'
+  - '#990099'
+  - '#0099c6'
+  - '#dd4477'
+  - '#66aa00'
+  - '#b82e2e'
+  - '#316395'
+  cross_filters_enabled: true
+  default_filters: '{}'
+  expanded_slices: {}
+  label_colors:
+    '2023': '#000000'
+  native_filter_configuration:
+  - id: NATIVE_FILTER-mp7lxhQSO
+    controlValues:
+      enableEmptyFilter: false
+    name: Date of the filter
+    filterType: filter_time
+    targets:
+    - {}
+    defaultDataMask:
+      extraFormData: {}
+      filterState: {}
+      ownState: {}
+    cascadeParentIds: []
+    scope:
+      rootPath:
+      - ROOT_ID
+      excluded:
+      - 83
+    type: NATIVE_FILTER
+    description: ''
+    chartsInScope:
+    - 80
+    - 81
+    tabsInScope: []
+  - id: NATIVE_FILTER-vEYPZQ9E1
+    controlValues:
+      enableEmptyFilter: false
+    name: Period
+    filterType: filter_timegrain
+    targets:
+    - datasetUuid: 23cbdae1-35fe-4771-9bd7-d9d011ff1451
+    defaultDataMask:
+      extraFormData:
+        time_grain_sqla: P1M
+      filterState:
+        label: Month
+        value:
+        - P1M
+    cascadeParentIds: []
+    scope:
+      rootPath:
+      - ROOT_ID
+      excluded:
+      - 83
+    type: NATIVE_FILTER
+    description: ''
+    chartsInScope:
+    - 80
+    - 81
+    tabsInScope: []
+  refresh_frequency: 0
+  shared_label_colors:
+    SUM(sale_price): '#3366cc'
+  timed_refresh_immune_slices: []
+  filter_bar_orientation: HORIZONTAL
+version: 1.0.0

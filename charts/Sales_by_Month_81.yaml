@@ -1,0 +1,80 @@
+slice_name: Sales by Month
+description: null
+certified_by: null
+certification_details: null
+viz_type: echarts_timeseries_bar
+params:
+  datasource: 22__table
+  viz_type: echarts_timeseries_bar
+  slice_id: 81
+  x_axis: created_at
+  time_grain_sqla: P1M
+  x_axis_sort_asc: true
+  metrics:
+  - aggregate: SUM
+    column:
+      advanced_data_type: null
+      certification_details: null
+      certified_by: null
+      column_name: sale_price
+      description: null
+      expression: null
+      filterable: true
+      groupby: true
+      id: 753
+      is_certified: false
+      is_dttm: false
+      python_date_format: null
+      type: FLOAT64
+      type_generic: 0
+      verbose_name: null
+      warning_markdown: null
+    datasourceWarning: false
+    expressionType: SIMPLE
+    hasCustomLabel: false
+    label: SUM(sale_price)
+    optionName: metric_nbqlhsm0z_k1ju8hyrm5e
+    sqlExpression: null
+  groupby: []
+  adhoc_filters:
+  - clause: WHERE
+    comparator: '2023-01-01T00:00:00 : 2024-01-01T00:00:00'
+    expressionType: SIMPLE
+    operator: TEMPORAL_RANGE
+    subject: created_at
+  order_desc: true
+  row_limit: 10000
+  truncate_metric: true
+  show_empty_columns: true
+  comparison_type: values
+  annotation_layers: []
+  forecastPeriods: 10
+  forecastInterval: 0.8
+  orientation: vertical
+  x_axis_title_margin: 15
+  y_axis_title_margin: 15
+  y_axis_title_position: Left
+  sort_series_type: sum
+  color_scheme: googleCategory10c
+  stack: null
+  only_total: true
+  show_legend: true
+  legendType: scroll
+  legendOrientation: top
+  x_axis_time_format: smart_date
+  y_axis_format: SMART_NUMBER
+  y_axis_bounds:
+  - null
+  - null
+  rich_tooltip: true
+  tooltipTimeFormat: smart_date
+  extra_form_data: {}
+  dashboards:
+  - 9
+query_context: '{"datasource":{"id":22,"type":"table"},"force":false,"queries":[{"filters":[{"col":"created_at","op":"TEMPORAL_RANGE","val":"2023-01-01T00:00:00
+  : 2024-01-01T00:00:00"}],"extras":{"having":"","where":""},"applied_time_extras":{},"columns":[{"timeGrain":"P1M","columnType":"BASE_AXIS","sqlExpression":"created_at","label":"created_at","expressionType":"SQL"}],"metrics":[{"aggregate":"SUM","column":{"advanced_data_type":null,"certification_details":null,"certified_by":null,"column_name":"sale_price","description":null,"expression":null,"filterable":true,"groupby":true,"id":753,"is_certified":false,"is_dttm":false,"python_date_format":null,"type":"FLOAT64","type_generic":0,"verbose_name":null,"warning_markdown":null},"datasourceWarning":false,"expressionType":"SIMPLE","hasCustomLabel":false,"label":"SUM(sale_price)","optionName":"metric_nbqlhsm0z_k1ju8hyrm5e","sqlExpression":null}],"orderby":[[{"aggregate":"SUM","column":{"advanced_data_type":null,"certification_details":null,"certified_by":null,"column_name":"sale_price","description":null,"expression":null,"filterable":true,"groupby":true,"id":753,"is_certified":false,"is_dttm":false,"python_date_format":null,"type":"FLOAT64","type_generic":0,"verbose_name":null,"warning_markdown":null},"datasourceWarning":false,"expressionType":"SIMPLE","hasCustomLabel":false,"label":"SUM(sale_price)","optionName":"metric_nbqlhsm0z_k1ju8hyrm5e","sqlExpression":null},false]],"annotation_layers":[],"row_limit":10000,"series_columns":[],"series_limit":0,"order_desc":true,"url_params":{},"custom_params":{},"custom_form_data":{},"time_offsets":[],"post_processing":[{"operation":"pivot","options":{"index":["created_at"],"columns":[],"aggregates":{"SUM(sale_price)":{"operator":"mean"{{ '}}' }},"drop_missing_columns":false{{ '}}' }},{"operation":"flatten"}]}],"form_data":{"datasource":"22__table","viz_type":"echarts_timeseries_bar","slice_id":81,"x_axis":"created_at","time_grain_sqla":"P1M","x_axis_sort_asc":true,"metrics":[{"aggregate":"SUM","column":{"advanced_data_type":null,"certification_details":null,"certified_by":null,"column_name":"sale_price","description":null,"expression":null,"filterable":true,"groupby":true,"id":753,"is_certified":false,"is_dttm":false,"python_date_format":null,"type":"FLOAT64","type_generic":0,"verbose_name":null,"warning_markdown":null},"datasourceWarning":false,"expressionType":"SIMPLE","hasCustomLabel":false,"label":"SUM(sale_price)","optionName":"metric_nbqlhsm0z_k1ju8hyrm5e","sqlExpression":null}],"groupby":[],"adhoc_filters":[{"clause":"WHERE","comparator":"2023-01-01T00:00:00
+  : 2024-01-01T00:00:00","expressionType":"SIMPLE","operator":"TEMPORAL_RANGE","subject":"created_at"}],"order_desc":true,"row_limit":10000,"truncate_metric":true,"show_empty_columns":true,"comparison_type":"values","annotation_layers":[],"forecastPeriods":10,"forecastInterval":0.8,"orientation":"vertical","x_axis_title_margin":15,"y_axis_title_margin":15,"y_axis_title_position":"Left","sort_series_type":"sum","color_scheme":"googleCategory10c","stack":null,"only_total":true,"show_legend":true,"legendType":"scroll","legendOrientation":"top","x_axis_time_format":"smart_date","y_axis_format":"SMART_NUMBER","y_axis_bounds":[null,null],"rich_tooltip":true,"tooltipTimeFormat":"smart_date","extra_form_data":{},"dashboards":[9],"force":false,"result_format":"json","result_type":"full"},"result_format":"json","result_type":"full"}'
+cache_timeout: null
+uuid: 2f637270-8927-4f41-a1a6-39371c68672e
+version: 1.0.0
+dataset_uuid: 23cbdae1-35fe-4771-9bd7-d9d011ff1451
